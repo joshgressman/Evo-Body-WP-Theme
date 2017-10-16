@@ -1,0 +1,1438 @@
+/*!
+Theme Name: evo-body-theme
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: evo-body-theme
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+evo-body-theme is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+
+
+/*COLOR REFERENCES
+
+Green:      rgb(59,185,76);
+Light Gray: rgb(248,248,248);
+Dark Gray:  rgb(56,56,56);
+
+*/
+
+/*GENERAL CSS*/
+
+.logged-in .navbar-fixed-top{
+	top: 32px;
+}
+
+body {
+  margin-top: 50px;
+
+}
+
+/*GLOBAL*/
+h1,h2,h3,h4,h5,h6,p,a,button,input,label,select,option,li,em,i {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: rgba(56,56,56,.9);
+
+}
+
+
+
+/*NAVBAR*/
+
+.navbar-brand {
+ margin-top: -9px;
+}
+
+.navbar a {
+  font-size: 13px;
+}
+
+
+
+/*CAROUSEL SECTION*/
+
+
+.slider {
+  margin-bottom: 50px;
+}
+
+
+
+
+/*INFO SECTION*/
+
+
+.info a {
+  color:inherit;
+}
+
+.info .info-content {
+  position: absolute;
+  top: 60px;
+  left: 55px;
+  width: 100%;
+}
+
+.info .call{
+ /*height: 340px;*/
+ background-color: lightgray;
+ border: solid 1px white;
+ padding: 0;
+ margin: 0;
+
+}
+
+.info img {
+  position: relative;
+  opacity: 0.3;
+  height: 240px;
+  width: 100%;
+}
+
+.info h3 {
+  background-color: rgba(56,56,56,.8);
+  width: 280px;
+  padding: 4px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.info h4 {
+  font-weight: bold;
+  font-size: 2.2em;
+  color: black;
+  text-decoration: underline;
+}
+
+.info p {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: black;
+}
+
+.info .call:hover img {
+ opacity: .9;
+}
+
+.info .call:hover h3 {
+   background-color: rgba(56,56,56,.8);
+}
+
+/*CALL TO ACTION SECTION*/
+.call-to-action {
+  height: 60px;
+  padding-top: 14px;
+  margin-bottom: -20px;
+  text-align: center;
+  background: #00FF00;
+
+}
+
+#call-to-action-header {
+  display: inline-block;
+  font-size: 1.5em;
+  padding-right: 7px;
+
+}
+
+#call-to-action-button{
+display: inline-block;
+width: 85px;
+font-size: 1.1em;
+padding: 1px;
+margin-top: -7px;
+
+}
+
+
+
+/*AMENITIES SECTION*/
+
+.amenities {
+  background-color: rgb(56,56,56);
+  padding: 2px 0 43px 0;
+}
+
+.amenities .items {
+  padding: 0;
+  margin: 0;
+  border: 1px solid white;
+}
+
+.amenities .container h3 {
+  position: absolute;
+  background-color: rgba(255,255,255,.6);
+  color: rgba(56,56,56,.9);
+  padding: 6px;
+  top: 60%;
+  font-size: 1.7em;
+}
+.amenities .amenities-content  {
+  position: absolute;
+  top: 65%;
+  left: 20px;
+  width: 100%;
+  transform:rotate(3deg);
+}
+
+.amenities .items img {
+  opacity: 0.8;
+  height: 240px;
+  width: 100%;
+}
+
+.amenities-background {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; height:160px;
+}
+
+
+
+#why-join-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: rgb(56,56,56);
+}
+
+#why-join-section h1,h2 {
+  color:white;
+}
+
+#why-join-section p {
+  color:white;
+}
+
+#why-join-section i {
+   color: #00FF00;
+   font-size: 5.0em;
+
+	 /*rgba(66,255,27,.6)*/
+}
+
+
+
+
+/********************************* LOCATION PAGE*************************/
+
+.location-form {
+  margin-top: -50px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
+    text-decoration: none;
+    background: rgba(66,255,27,.8);
+    outline: 0;
+    color: rgba(56,56,56,.9);
+}
+
+.form-inline input {
+  margin: 8px;
+}
+
+#btn-submit {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.location-form ul {
+  list-style: none;
+  padding: 0;
+}
+
+.location-form h2, h3 {
+  padding: 0 0 15px 0;
+  margin: 0;
+}
+
+
+
+.location-form i {
+  font-size: 1.0em;
+  padding: 5px;;
+  margin: 0;
+
+}
+
+#location-info {
+  background-color: rgb(56,56,56);
+
+}
+
+#location-info .location-info-content p {
+  color: white;
+
+}
+
+#location-info .location-info-content h2 {
+  color: white;
+
+}
+
+#location-info .location-info-content h4 {
+  color: white;
+
+}
+
+#location-info .location-info-content {
+  padding-bottom: 20px;
+
+}
+
+#location-header-h2 {
+  color: rgb(56,56,56);
+}
+
+.location-amenities {
+  /*background-color: rgba(63,255,38,.6);*/
+}
+
+.location-amenities h2 {
+  text-align: center;
+
+}
+
+#multi-access {
+  height: 345px;
+}
+
+#location-header {
+  padding:0 0 5px 0;
+  margin: 0;
+  color: rgba(56,56,56,.9);
+}
+
+
+
+.amenities h3 {
+  background-color: rgb(59,185,76);
+  color: white;
+  padding: 10px;
+}
+
+.amenities p {
+  background-color: rgb(56,56,56);
+  color: white;
+  padding: 10px;
+}
+
+.location-amenities .amenities {
+  height:340px;
+  background-color: rgb(56,56,56);
+  padding:0px;
+  margin: 10px;
+}
+
+#location-meet-trainers {
+
+
+  background-color: rgb(56,56,56);
+  text-align: center;
+  padding: 0 0 2px 0;
+}
+
+#location-meet-trainers img {
+
+  width: 100%;
+}
+
+#location-meet-trainers p {
+  background-color: rgb(59,185,76);
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.directions {
+  text-decoration: underline;
+}
+/****************************** END LOCATION PAGE*************************/
+
+
+/*************************** LOCATION MEET OUR TRAINERS ******************/
+ #meet-our-trainers .bio {
+   background-color: rgb(56,56,56);
+   padding-top: 20px;
+   padding-bottom: 10px;
+   text-align: center;
+	 border-bottom: 4px white solid;
+
+ }
+
+ .bio {
+
+ }
+
+  #meet-our-trainers .bio p {
+    color: white;
+    font-size: 1.2em;
+  }
+
+
+/************************* END LOCATION MEET OUR TRAINERS ****************/
+
+/***********************INDEVIDUAL TRAINER BIO PAGE **********************/
+
+#indevidual-bio-section .ind-header  {
+ padding-bottom: 20px;
+}
+
+
+ #indevidual-bio-section h2 {
+  color: rgb(56,56,56);
+ }
+
+ #indevidual-bio-section h4 {
+  color: rgb(56,56,56);
+ }
+
+ #indevidual-bio-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+ }
+
+ #indevidual-bio-section li {
+  font-size: 1.1em;
+ }
+
+ #indevidual-bio-section img {
+  border: solid 15px rgb(56,56,56);
+ }
+
+
+/******************** END INDEVIDUAL TRAINER BIO PAGE ********************/
+
+
+/******************************** JOIN NOW PAGE **************************/
+.privacy {
+  color:rgb(56,56,56);
+}
+
+
+#membership-promotion {
+  font-size: 1.3em;
+
+}
+
+#location-dropdown li {
+  list-style: none;
+
+}
+
+#location-dropdown a:hover{
+    color: rgba(56,56,56,.5);
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+/****************************** END JOIN NOW PAGE ************************/
+
+/*******************************GUEST PASS PAGE**************************/
+.amenities #pass-amenities {
+  padding: 40px 0 0px 0;
+}
+
+#pass-page-button {
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.guest-pass-form {
+  margin-bottom: 50px;
+}
+
+#pass-header {
+  color: rgb(56,56,56);
+}
+
+#pass-sub-head {
+  color: rgb(56,56,56);
+}
+
+#select-menu {
+	width: 300px !important;
+	height: 34px;
+}
+
+/*****************************END GUEST PASS PAGE************************/
+
+/************************PERSONAL TRAINING PAGE**************************/
+
+.pt-content ul{
+  list-style: none;
+  padding: 0;
+}
+
+.pt-content p{
+  color: rgb(56,56,56);
+}
+
+.pt-content li {
+  padding: 0;
+}
+
+.pt-content i {
+  font-size: 1.0em;
+  padding: 5px;;
+  margin: 0;
+}
+
+#book-assessment{
+  font-size: 1.2em;
+  margin: 40px 0 0 10px;
+}
+
+#book-assessment i {
+  padding: 0;
+  margin-right: -14px;
+}
+
+.pt-content .pt-info {
+
+
+}
+
+.assessment-content p {
+  color: rgb(56,56,56);
+}
+
+.assessment-content .form-group {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.assessment-content .form-group input {
+
+}
+
+#assessment-item-list {
+  list-style: none;
+  padding: 0px;
+}
+
+#assessment-item-list li {
+  padding: 0;
+}
+
+#assessment-item-list i {
+  font-size: 1.0em;
+  padding: 5px;;
+  margin: 0;
+}
+
+#assessment-form-header {
+  color: rgb(56,56,56);
+}
+
+#pt-page-header {
+    color: rgb(56,56,56);
+}
+
+#training-icons {
+  background-color: rgb(56,56,56);
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#training-icons p{
+color: white;
+}
+
+#training-icons h4 {
+   text-align: center;
+   /*padding-left: 25px;*/
+}
+
+#training-icons i {
+  color: white;
+  font-size: 5.0em;
+
+}
+
+/********************END PERSONAL TRAINING PAGE**************************/
+
+/*************************** GROUP FITNESS PAGE *************************/
+
+#group-fitness-classes {
+  margin-top: 40px;
+}
+
+#group-fitness-classes .class{
+  background-color: rgb(56,56,56);
+  border: solid white 10px;
+}
+
+#group-fitness-classes .class h3{
+   background-color: rgb(59,185,76);
+   padding: 4px;
+   color: white;
+}
+
+#group-fitness-classes .class p{
+   color: white;
+   padding-top: 8px;
+}
+
+#class-pass-img img {
+ position: relative;
+
+}
+
+#class-pass-btn {
+ position: absolute;
+ top: 170px;
+ left: 90px
+}
+
+#pt-hero-img {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; height: 400px;
+}
+
+#group-button {
+  margin: 5px 0 0 14px;
+}
+
+#group-select {
+  margin-top: 5px;
+}
+
+#group-email {
+  margin-top: 5px;
+}
+
+#group-phone {
+ margin-top: 5px;
+}
+
+/*************************** GROUP FITNESS PAGE *************************/
+
+/**************************CHALLENGE PAGE*******************************/
+  #challenge-details {
+    list-style: none;
+    padding:0;
+    margin: 0;
+  }
+
+
+  #challenge-details li{
+    padding:0;
+    margin: 0;
+  }
+
+  #challenge-details i{
+    font-size: 1.0em;
+    padding: 5px;
+    margin: 0;
+  }
+
+  #success-stories {
+
+    background-color: rgb(56,56,56);
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
+
+
+
+/***********************END CHALLENGE PAGE*******************************/
+
+/**************************BLOG PAGE*******************************/
+  .blog-title {
+    color: rgb(59,185,76);
+  }
+
+  .blog-content {
+      color: rgba(56,56,56,.9);
+  }
+
+  .post .post-body p {
+      color: rgba(56,56,56,.9);
+  }
+
+  .post-body {
+    padding-top: 10px;
+  }
+/***********************END BLOG PAGE*******************************/
+
+/************************ CAREERS PAGE ****************************/
+  #career-info-heading {
+    font-size: 1.2em;
+  }
+
+  #careers-list {
+    list-style: none;
+  }
+
+    .listing {
+    border-top: solid lightgray 1px;
+    border-bottom: solid lightgray 1px;
+    padding: 10px 5px 10px 25px;
+  }
+
+  .position-title {
+    display: inline;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: underline;
+    color: black;
+  }
+
+  .position-title:hover {
+    color: lightgray;
+  }
+
+  .position-location {
+    display: inline;
+    text-align: right;
+  }
+
+  #application-form {
+    border: solid 1px lightgray;
+    padding: 20px 0 20px 0;
+    margin-top: 10px;
+  }
+
+  #job-listings {
+    padding-top: 25px;
+  }
+
+  #avl-positions {
+    background-color: rgb(56,56,56);
+  }
+
+  #avl-positions h3 {
+    color: rgb(59,185,76);
+    padding: 5px 0 5px 5px;
+    margin: 0;
+    font-size: 1.8em;
+  }
+
+  .license p {
+    padding-left: 4px;
+  }
+
+  .license label {
+    padding-left: 30px;
+  }
+
+  #application-section {
+    padding-top: 40px;
+  }
+
+/********************** END CAREERS PAGE **************************/
+
+/********************** JOIN LOCATION PAGE ***********************/
+.join-location-section {
+  padding-top: 50px;
+}
+
+
+.join-location-section h2,h4,p {
+  color:rgb(56,56,56);
+}
+
+.join-header-text {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/******************** END JOIN LOCATION PAGE ***********************/
+
+/***************************PRIVACY POLICY*************************/
+
+#privacy-policy h2,h4,p{
+  color: rgb(56,56,56);
+}
+
+/************************* END PRIVACY POLICY ***********************/
+
+/*FOOTER*/
+
+footer {
+  margin-top: 30px;
+  background-color: black;
+  border-top: solid 8px rgb(112,112,112);
+  /*height: 120px;*/
+}
+
+.footer a {
+  color: white;
+  font-size: 12px;
+  /*text-decoration: underline;*/
+}
+
+.footer li:hover {
+  color: rgb(56,56,56);
+  /*text-decoration: underline;*/
+}
+
+
+
+ .footer-list {
+   padding-top: 20px;
+ }
+
+ #copyright {
+   text-align: center;
+   color: white;
+   font-size: 11px;
+   padding-top: 5px;
+ }
+
+/*SOCIAL MEDIA ICONS*/
+/* Style all font awesome icons */
+.fa {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 17px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/*END FOOTER*/
+
+.form-group {
+  margin: 4px;
+}
+
+/*MODAL*/
+#first-name {
+  width: 240px;
+  margin-right: 10px;
+
+}
+
+#last-name {
+  width: 240px;
+}
+
+#email {
+    width: 240px;
+      margin-right: 10px;
+
+}
+
+#phone {
+    width: 240px;
+}
+
+#modal-submit{
+  margin-top: 20px;
+  width: 200px;
+
+}
+
+.disclaimer {
+  font-size: 0.8em;
+}
+
+#myModalLabel {
+  color: rgba(56,56,56,.9);
+  text-align: center;
+}
+
+#modal-p {
+  color: rgba(56,56,56,.9);
+  text-align: center;
+}
+/*END MODAL*/
+
+/**************************** MEDIA QUERIES  *********************************/
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  #arrow-location  {
+    padding-top: 50px;
+  }
+
+  div.navbar-header {
+    width: 385px;
+    padding:0;
+    margin:0;
+  }
+
+  .location-details {
+    padding-bottom: 10px;
+  }
+
+  .location-amenities-title {
+    margin-top: -10px;
+  }
+
+  .location-amenities-title h2{
+    color: rgb(56,56,56);
+
+  }
+
+  #pt-hero-img {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; height: 200px;
+  }
+
+  #home-amenities-large {
+   display: none;
+ }
+
+ #group-last {
+   margin-top: 8px;
+ }
+
+ #group-phone {
+   margin-top: 8px;
+ }
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+
+#arrow-location  {
+  /*font-size: 8.0em;
+  color: rgb(59,185,76);*/
+  padding-top: 60px;
+}
+
+.call-to-action{
+  margin-bottom: 4px;
+  height: 80px;
+}
+
+
+#home-amenities-large {
+ display: none;
+}
+
+/*REMOVE MARGIN UNDER CAROUSEL IMG */
+.info {
+  margin-top: -68px;
+}
+
+#meet-our-trainers .bio img {
+  display: none;
+}
+
+#meet-our-trainers br {
+  display: none;
+}
+
+#assessment-last {
+  margin-top: 5px;
+}
+
+#assessment-email {
+  margin: -14px 0 5px 0;
+}
+
+#group-last {
+  margin-top: 8px;
+}
+
+#group-phone {
+  margin-top: 8px;
+}
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+#arrow-location  {
+
+  padding-top: 40px;
+}
+
+div.navbar-header {
+  width: 310px;
+  padding:0;
+  margin:0;
+}
+
+/*HOME PAGE INFO*/
+.info img {
+  position: relative;
+  opacity: 0.5;
+  height: 200px;
+  width: 100%;
+}
+
+.info h3 {
+  background-color: rgba(56,56,56,.8);
+  width: 200px;
+  padding: 4px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.info h4 {
+  font-weight: bold;
+  font-size: 1.4em;
+  color: black;
+  text-decoration: underline;
+}
+
+.info p {
+  font-size: .8em;
+  font-weight: bold;
+  color: black;
+}
+
+.call-to-action{
+  margin-bottom: 1px;
+  height: 100px;
+}
+
+
+.location-amenities-title {
+  margin-top: -20px;
+}
+
+.location-amenities-title h2{
+  color: rgb(56,56,56);
+
+}
+
+#home-amenities-large {
+ display: none;
+}
+
+.info {
+  margin-top: -65px;
+}
+
+#meet-our-trainers .bio img {
+  display: none;
+}
+
+#meet-our-trainers br {
+  display: none;
+}
+
+
+#why-join-section {
+  padding-bottom: 40px;
+}
+
+#assessment-last {
+  margin-top: 5px;
+}
+
+#assessment-email {
+  margin: -15px 0 5px 0;
+}
+
+#group-last {
+  margin-top: 8px;
+}
+
+#group-phone {
+  margin-top: 8px;
+}
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+#arrow-location  {
+  font-size: 8.0em;
+  color: rgb(59,185,76);
+  margin-top: -22px;
+}
+
+/*#myModal {
+  width: 768px;
+}*/
+
+.navbar-collapse.collapse {
+      display: none !important;
+  }
+  .navbar-collapse.collapse.in {
+      display: block !important;
+  }
+  .navbar-header .collapse, .navbar-toggle {
+      display:block !important;
+  }
+  .navbar-header {
+      float:none;
+  }
+
+  .location-amenities-title {
+    margin-top: -10px;
+  }
+
+  .location-amenities-title h2{
+    color: rgb(56,56,56);
+
+  }
+
+   #home-amenities-large {
+    display: none;
+  }
+
+  #meet-our-trainers .bio img {
+    display: none;
+  }
+
+  #meet-our-trainers br {
+    display: none;
+  }
+
+  #group-last {
+    margin: 0px;
+  }
+
+  #group-phone {
+    margin: 0px;
+  }
+
+	.trainer-name {
+		padding: 2px 0 0 0;
+		margin:0;
+		margin-bottom: -5px;
+	}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+#meet-our-trainers .bio img {
+  display: block;
+}
+
+#meet-our-trainers br {
+  display: block;
+}
+
+
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+#arrow-location {
+  font-size: 8.0em;
+  color: rgb(59,185,76);
+  padding-top: 190px;
+}
+
+.footer .icons {
+  padding-left: 200px;
+}
+
+.amenities-block {
+  padding-left: 17%;
+}
+
+.hero-section-personal-training .jumbotron {
+  height: 400px;
+}
+
+.hero-section-challenge .jumbotron {
+    height: 400px;
+}
+
+
+.hero-section-join .jumbotron {
+    height: 400px;
+}
+
+ .hero-section .guest-pass {
+   height: 400px;
+ }
+
+ .hero-section h1 {
+
+    padding-top: 5%;
+ }
+
+ .hero-section-blog .jumbotron {
+     height: 400px;
+ }
+
+  .drop {
+   height: 400px;
+ }
+
+
+ #club-info-images {
+   padding-top: 60px;
+ }
+
+
+ .call-to-action {
+   height: 60px;
+   padding-top: 10px;
+   margin-bottom: -20px;
+   text-align: center;
+   background: #00FF00;
+ }
+
+ #home-amenities-large {
+  display: block;
+
+}
+
+#meet-our-trainers .bio img {
+  display: block;
+}
+
+#meet-our-trainers br {
+  display: block;
+}
+
+#assessment-last {
+  margin: 0;
+}
+
+#assessment-email {
+  margin: 0;
+}
+
+#group-last {
+  margin: 0px;
+}
+
+#group-phone {
+  margin: 0px;
+}
+
+.trainer-name {
+	padding: 2px 0 0 0;
+	margin:0;
+	margin-bottom: -5px;
+}
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+  #arrow-location {
+    font-size: 8.0em;
+    color: rgb(59,185,76);
+    padding-top: 190px;
+  }
+
+  .footer .icons {
+    padding-left: 200px;
+  }
+
+  .amenities-block {
+    padding-left: 17%;
+  }
+
+  .hero-section-personal-training .jumbotron {
+    height: 400px;
+  }
+
+  .hero-section-challenge .jumbotron {
+      height: 400px;
+  }
+
+
+  .hero-section-join .jumbotron {
+      height: 400px;
+  }
+
+   .hero-section .guest-pass {
+     height: 400px;
+   }
+
+   .hero-section h1 {
+
+      padding-top: 5%;
+   }
+
+   .hero-section-blog .jumbotron {
+       height: 400px;
+   }
+
+
+    .drop {
+     height: 400px;
+   }
+
+   #club-info-images {
+     padding-top: 60px;
+   }
+
+
+   #meet-our-trainers br {
+     display: block;
+   }
+
+   #assessment-last {
+     margin: 0;
+   }
+
+   #assessment-email {
+     margin: 0;
+   }
+
+   #group-last {
+     margin: 0px;
+   }
+
+   #group-phone {
+     margin: 0px;
+   }
+
+	 .trainer-name {
+ 		padding: 2px 0 0 0;
+ 		margin:0;
+ 		margin-bottom: -5px;
+ 	}
+
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
